@@ -1,4 +1,4 @@
-/* style.css - Полная версия с видео-фоном БЕЗ ЭФФЕКТОВ */
+/* style.css - Видео-фон с легким приближением */
 
 /* Сброс отступов и базовые настройки */
 * {
@@ -9,7 +9,7 @@
 
 body {
     font-family: 'Playfair Display', 'Cormorant Infant', serif;
-    color: #1a1a1a; /* Было #2c2c2c - стал насыщеннее */
+    color: #1a1a1a;
     line-height: 1.6;
     font-size: 16px;
     font-weight: 300;
@@ -17,7 +17,7 @@ body {
     min-height: 100vh;
 }
 
-/* ВИДЕО-ФОН - чистый, без эффектов */
+/* ВИДЕО-ФОН - с легким приближением */
 .video-background {
     position: fixed;
     top: 0;
@@ -26,17 +26,21 @@ body {
     height: 100%;
     z-index: -2;
     overflow: hidden;
+    background-color: #faf7f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .video-background video {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    min-width: 100%;
-    min-height: 100%;
+    transform: translate(-50%, -50%) scale(1.05); /* Легкое приближение на 5% */
     width: auto;
     height: auto;
+    min-width: 100%;
+    min-height: 100%;
     object-fit: cover;
 }
 
@@ -62,7 +66,7 @@ section {
     font-weight: 400;
     text-align: center;
     margin-bottom: 40px;
-    color: #2a2a2a; /* Было #3a3a3a - стал насыщеннее */
+    color: #2a2a2a;
     font-family: 'Playfair Display', serif;
 }
 
@@ -86,7 +90,7 @@ section {
 .wedding-date {
     font-size: 1.5rem;
     font-weight: 300;
-    color: #4a4a4a; /* Было #6b6b6b - стал насыщеннее */
+    color: #4a4a4a;
 }
 
 /* Таймер */
@@ -98,7 +102,7 @@ section {
     font-size: 1.2rem;
     margin: 20px auto;
     max-width: 600px;
-    color: #2a2a2a; /* Было #4a4a4a - стал насыщеннее */
+    color: #2a2a2a;
 }
 
 .countdown-text.before {
@@ -118,7 +122,7 @@ section {
     font-weight: 400;
     margin: 40px 0 20px;
     letter-spacing: 4px;
-    color: #2a2a2a; /* Было #3a3a3a - стал насыщеннее */
+    color: #2a2a2a;
 }
 
 .countdown {
@@ -143,7 +147,7 @@ section {
     font-size: 0.9rem;
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: #4a4a4a; /* Было #6b6b6b - стал насыщеннее */
+    color: #4a4a4a;
 }
 
 /* Локация */
@@ -165,12 +169,12 @@ section {
     font-size: 1.5rem;
     font-weight: 400;
     margin-bottom: 20px;
-    color: #2a2a2a; /* Было #3a3a3a - стал насыщеннее */
+    color: #2a2a2a;
 }
 
 .location-card i {
     margin-right: 10px;
-    color: #6b6b6b; /* Было #8a8a8a - стал насыщеннее */
+    color: #6b6b6b;
 }
 
 .location-image {
@@ -202,7 +206,7 @@ section {
 .transport-option i {
     font-size: 2rem;
     margin-bottom: 15px;
-    color: #4a4a4a; /* Было #6b6b6b - стал насыщеннее */
+    color: #4a4a4a;
 }
 
 .transport-option h4 {
@@ -223,8 +227,8 @@ section {
     display: inline-block;
     padding: 12px 30px;
     background: transparent;
-    border: 1px solid #1a1a1a; /* Было #2c2c2c - стал насыщеннее */
-    color: #1a1a1a; /* Было #2c2c2c - стал насыщеннее */
+    border: 1px solid #1a1a1a;
+    color: #1a1a1a;
     text-decoration: none;
     transition: all 0.3s ease;
     font-weight: 300;
@@ -232,7 +236,7 @@ section {
 }
 
 .map-btn:hover {
-    background: #1a1a1a; /* Было #2c2c2c - стал насыщеннее */
+    background: #1a1a1a;
     color: #faf7f2;
 }
 
@@ -254,13 +258,13 @@ section {
     font-size: 1.3rem;
     font-weight: 400;
     min-width: 80px;
-    color: #2a2a2a; /* Было #3a3a3a - стал насыщеннее */
+    color: #2a2a2a;
 }
 
 .timeline-content h3 {
     font-size: 1.2rem;
     font-weight: 300;
-    color: #2a2a2a; /* Было #4a4a4a - стал насыщеннее */
+    color: #2a2a2a;
 }
 
 /* Дресс-код */
@@ -286,7 +290,7 @@ section {
 
 .color-name {
     font-size: 0.9rem;
-    color: #4a4a4a; /* Было #6b6b6b - стал насыщеннее */
+    color: #4a4a4a;
 }
 
 .dress-code-tips {
@@ -306,7 +310,7 @@ section {
 .tip-card i {
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #4a4a4a; /* Было #6b6b6b - стал насыщеннее */
+    color: #4a4a4a;
 }
 
 .tip-card h4 {
@@ -333,7 +337,7 @@ section {
 
 .important-header i {
     font-size: 1.5rem;
-    color: #6b6b6b; /* Было #8a8a8a - стал насыщеннее */
+    color: #6b6b6b;
 }
 
 .important-header h3 {
@@ -358,7 +362,7 @@ section {
 
 .gift-icon i {
     font-size: 2.5rem;
-    color: #4a4a4a; /* Было #6b6b6b - стал насыщеннее */
+    color: #4a4a4a;
     margin-bottom: 20px;
 }
 
@@ -371,7 +375,7 @@ section {
 .gift-reason {
     margin-top: 20px;
     font-size: 0.95rem;
-    color: #4a4a4a; /* Было #6b6b6b - стал насыщеннее */
+    color: #4a4a4a;
 }
 
 .gifts-note {
@@ -384,7 +388,7 @@ section {
 
 .note-content i {
     font-size: 2rem;
-    color: #4a4a4a; /* Было #6b6b6b - стал насыщеннее */
+    color: #4a4a4a;
     margin-bottom: 15px;
 }
 
@@ -415,7 +419,7 @@ section {
 
 .faq-question i {
     transition: transform 0.3s ease;
-    color: #4a4a4a; /* Было #6b6b6b - стал насыщеннее */
+    color: #4a4a4a;
 }
 
 .faq-item.active .faq-question i {
@@ -465,7 +469,7 @@ section {
     border: none;
     font-size: 1rem;
     cursor: pointer;
-    color: #6b6b6b; /* Было #8a8a8a - стал насыщеннее */
+    color: #6b6b6b;
     padding: 5px;
 }
 
@@ -477,7 +481,7 @@ section {
     display: block;
     margin-bottom: 10px;
     font-weight: 300;
-    color: #2a2a2a; /* Было #3a3a3a - стал насыщеннее */
+    color: #2a2a2a;
 }
 
 .form-group input[type="text"] {
@@ -492,7 +496,7 @@ section {
 
 .form-group input[type="text"]:focus {
     outline: none;
-    border-color: #1a1a1a; /* Было #2c2c2c - стал насыщеннее */
+    border-color: #1a1a1a;
 }
 
 .checkbox-group {
@@ -531,8 +535,8 @@ section {
     width: 100%;
     padding: 15px;
     background: transparent;
-    border: 1px solid #1a1a1a; /* Было #2c2c2c - стал насыщеннее */
-    color: #1a1a1a; /* Было #2c2c2c - стал насыщеннее */
+    border: 1px solid #1a1a1a;
+    color: #1a1a1a;
     font-family: inherit;
     font-size: 1rem;
     cursor: pointer;
@@ -543,7 +547,7 @@ section {
 }
 
 .add-guest-btn:hover, .submit-btn:hover {
-    background: #1a1a1a; /* Было #2c2c2c - стал насыщеннее */
+    background: #1a1a1a;
     color: #faf7f2;
 }
 
@@ -626,6 +630,24 @@ section {
 }
 
 /* Медиа-запросы для адаптивности */
+@media (max-width: 992px) {
+    .hero-title {
+        font-size: 2.2rem;
+    }
+    
+    .wedding-date-large {
+        font-size: 2.5rem;
+    }
+    
+    .countdown-item {
+        min-width: 70px;
+    }
+    
+    .countdown-number {
+        font-size: 2.2rem;
+    }
+}
+
 @media (max-width: 768px) {
     section {
         padding: 40px 0;
@@ -689,22 +711,168 @@ section {
         width: 300px;
         height: 300px;
     }
+    
+    /* На планшетах чуть меньше приближение */
+    .video-background video {
+        transform: translate(-50%, -50%) scale(0.5);
+    }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 576px) {
     .hero-title {
         font-size: 1.5rem;
+        letter-spacing: 3px;
     }
-
+    
+    .wedding-date {
+        font-size: 1rem;
+    }
+    
     .countdown-number {
         font-size: 1.5rem;
     }
-
+    
+    .countdown-item {
+        min-width: 50px;
+    }
+    
+    .countdown-label {
+        font-size: 0.8rem;
+    }
+    
+    .timeline-time {
+        font-size: 1rem;
+        min-width: 60px;
+    }
+    
+    .timeline-content h3 {
+        font-size: 1rem;
+    }
+    
+    .location-card {
+        padding: 20px;
+    }
+    
+    .location-card h3 {
+        font-size: 1.2rem;
+    }
+    
+    .transport-option {
+        padding: 15px;
+    }
+    
+    .tip-card {
+        padding: 20px;
+    }
+    
+    .tip-card h4 {
+        font-size: 1.1rem;
+    }
+    
+    .gift-option {
+        padding: 25px 15px;
+    }
+    
+    .gift-icon i {
+        font-size: 2rem;
+    }
+    
+    .faq-question h3 {
+        font-size: 1rem;
+    }
+    
+    .guest-section {
+        padding: 20px;
+    }
+    
+    .guest-section h3 {
+        font-size: 1.1rem;
+    }
+    
     .checkbox-group {
         grid-template-columns: 1fr;
     }
+    
+    .add-guest-btn, .submit-btn {
+        padding: 12px;
+        font-size: 0.9rem;
+    }
+    
+    /* На телефонах видно полностью, но с легким приближением */
+    .video-background video {
+        object-fit: cover;
+        transform: translate(-50%, -50%) scale(0.5);
+    }
+}
 
-    .guest-section {
-        padding: 20px;
+@media (max-width: 375px) {
+    .hero-title {
+        font-size: 1.3rem;
+        letter-spacing: 2px;
+    }
+    
+    .wedding-date-large {
+        font-size: 1.5rem;
+    }
+    
+    .countdown {
+        gap: 5px;
+    }
+    
+    .countdown-item {
+        min-width: 45px;
+    }
+    
+    .countdown-number {
+        font-size: 1.2rem;
+    }
+    
+    .countdown-label {
+        font-size: 0.7rem;
+    }
+    
+    .timeline-item {
+        gap: 5px;
+    }
+    
+    .timeline-time {
+        font-size: 0.9rem;
+        min-width: 50px;
+    }
+    
+    /* На очень маленьких телефонах минимальное приближение */
+    .video-background video {
+        transform: translate(-50%, -50%) scale(0.5);
+    }
+}
+
+/* Для ландшафтной ориентации на телефонах */
+@media (max-height: 500px) and (orientation: landscape) {
+    .hero {
+        min-height: 120vh;
+    }
+    
+    .video-background video {
+        width: auto;
+        height: 100%;
+        object-fit: cover;
+        transform: translate(-50%, -50%) scale(0.5);
+    }
+    
+    .hero-title {
+        font-size: 1.5rem;
+    }
+    
+    .wedding-date {
+        font-size: 1rem;
+    }
+}
+
+/* Для устройств с высоким разрешением */
+@media (min-width: 1920px) {
+    .video-background video {
+        width: 100%;
+        height: auto;
+        transform: translate(-50%, -50%) scale(0.5); /* Чуть сильнее на больших экранах */
     }
 }
