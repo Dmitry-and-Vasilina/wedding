@@ -12,11 +12,14 @@
 </head>
 <body>
 
-    <!-- ВИДЕО-ФОН (без эффектов) -->
-    <div class="video-background">
-        <video src="5.mp4" autoplay loop muted playsinline></video>
-    </div>
-
+<!-- ВИДЕО-ФОН через Cloudinary -->
+<div class="video-background">
+    <video autoplay loop muted playsinline>
+        <source src="https://res.cloudinary.com/dbtwekypy/video/upload/v1772650699/5_ucpqr1.mp4" type="video/mp4">
+        <!-- Запасной вариант на случай проблем -->
+        <img src="k1.jpg" alt="Фон">
+    </video>
+</div>
 
 
     <!-- Герой-секция -->
